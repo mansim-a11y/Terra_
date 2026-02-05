@@ -65,7 +65,7 @@ export default function Hero() {
                         </div>
 
                         {/* Floating Badge */}
-                        <div className="absolute bottom-6 left-6 md:-left-6 bg-white p-4 rounded-2xl shadow-xl border border-brand-earth/5 animate-bounce-slow">
+                        <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-brand-earth/5 animate-bounce-slow z-20">
                             <div className="flex items-center gap-3">
                                 <div className="bg-brand-teal/10 p-2 rounded-full">
                                     <Leaf className="w-6 h-6 text-brand-teal" />
