@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 40% 96%;
+    /* #F5F5DC Bio Beige converted to HSL approx */
+    --foreground: 30 38% 21%;
+    /* #4B3621 Deep Earth */
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 38% 21%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 38% 21%;
+
+    --primary: 146 50% 36%;
+    /* #2E8B57 Terra Teal */
+    --primary-foreground: 60 40% 96%;
+
+    --secondary: 34 38% 68%;
+    /* #D2B48C Accent */
+    --secondary-foreground: 30 38% 21%;
+
+    --muted: 60 40% 96%;
+    --muted-foreground: 30 38% 40%;
+
+    --accent: 60 40% 96%;
+    --accent-foreground: 30 38% 21%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 40% 96%;
+
+    --border: 30 38% 21%;
+    --input: 30 38% 21%;
+    --ring: 146 50% 36%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-brand-earth/10;
+  }
+
+  body {
+    @apply bg-brand-beige text-brand-earth font-lato;
+    /* Organic paper texture feel can be added with an SVG pattern later */
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-montserrat;
+  }
+}
