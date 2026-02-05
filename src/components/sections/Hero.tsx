@@ -1,6 +1,7 @@
 import { ArrowRight, Leaf } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
+import heroBottle from "@/assets/hero-bottle.png"
 
 export default function Hero() {
     return (
@@ -50,20 +51,17 @@ export default function Hero() {
                     {/* Visual Asset */}
                     <div className="relative aspect-square md:aspect-[4/3] w-full animate-in fade-in zoom-in duration-1000 delay-200">
                         {/* Main Image Placeholder */}
+                        {/* Main Image */}
                         <div className="absolute inset-0 bg-brand-earth/5 rounded-3xl border-2 border-brand-earth/10 flex items-center justify-center overflow-hidden">
                             {/* Decorative Elements */}
                             <div className="absolute -right-20 -top-20 w-64 h-64 bg-brand-teal/5 rounded-full blur-3xl" />
                             <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-brand-accent/10 rounded-full blur-3xl" />
 
-                            <div className="text-center p-8 z-10">
-                                <Leaf className="w-24 h-24 text-brand-teal mx-auto mb-4 opacity-20" />
-                                <p className="font-montserrat font-bold text-xl text-brand-earth/40">
-                                    Box: Hero Product Shot
-                                </p>
-                                <p className="text-sm text-brand-earth/30">
-                                    Bottle on Soil with condensation
-                                </p>
-                            </div>
+                            <img
+                                src={heroBottle}
+                                alt="Terra Biodegradable Bottle on Soil"
+                                className="relative z-10 w-full h-full object-cover mix-blend-multiply opacity-90 hover:scale-105 transition-transform duration-700"
+                            />
                         </div>
 
                         {/* Floating Badge */}
