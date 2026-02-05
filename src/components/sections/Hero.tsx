@@ -1,7 +1,7 @@
 import { ArrowRight, Leaf } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import heroBottle from "@/assets/hero-bottle.png"
+import heroBottle from "@/assets/hero-bottle-user.jpg"
 
 export default function Hero() {
     return (
